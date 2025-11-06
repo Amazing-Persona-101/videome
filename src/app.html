@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="legacy" style="background : #242c46">
+
+<head>
+	<title>Free, Anonymous, Open and Untracked Video chatting</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Free, Anonymous, Open and Untracked Video chatting.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	%sveltekit.head%
+	<script type="module">
+		import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@cloudflare/realtimekit-ui@1.0.5/loader/index.es2017.js';
+
+		defineCustomElements();
+	</script>
+	<!-- Import Web Core via CDN too -->
+	<script src="https://cdn.jsdelivr.net/npm/@cloudflare/realtimekit@1.1.7/dist/browser.js"></script>
+</head>
+
+<body data-sveltekit-preload-data="hover" class=" text-white dark:text-gray-200 relative">
+	<div style="display: contents; height: 100%" class="h-full overflow-hidden app-container">%sveltekit.body%</div>
+</body>
+
+</html>

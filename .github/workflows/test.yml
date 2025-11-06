@@ -1,0 +1,48 @@
+name: Test VideoMe
+
+on:
+  push:
+    branches: [main, develop, feature/**]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (no cache)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Debug pnpm store path
+        run: pnpm store path
+
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --no-strict-peer-dependencies
+
+      - name: Run Vitest with Coverage
+        run: pnpm vitest run --coverage
+
+      - name: Upload Coverage Report (HTML)
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/

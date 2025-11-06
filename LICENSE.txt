@@ -1,0 +1,43 @@
+************************************************************
+videome.video — Real-Time Video & Audio Web App
+Copyright (C) 2025  videome.video  (https://videome.video)
+
+This project is made available under a dual-license scheme.
+You may choose to use this software under either of the following licenses:
+
+  (A) The GNU Affero General Public License, version 3 or
+      (at your option) any later version ("AGPL-3.0-or-later").
+
+  (B) The Apache License, version 2.0 ("Apache-2.0").
+
+------------------------------------------------------------
+
+How to choose:
+
+The AGPL-3.0-or-later is a strong copyleft license. It requires that if you
+modify the software and make it available to others over a network, you
+must also make the source code of your modified version available to
+those users under the same license. Choose this license if you are
+building a derivative work that you also want to be open source.
+
+The Apache-2.0 license is a permissive license. It allows you to use,
+modify, and distribute the software with very few restrictions. You can
+incorporate it into proprietary, closed-source products, but you must
+include the original copyright and license notices.
+
+You may not mix and match provisions from the two licenses. You must
+choose one and comply with all of its terms.
+
+Copies of both licenses are included in this repository:
+- AGPL-3.0.txt
+- APACHE-2.0.txt
+
+************************************************************
+
+Third-party components:
+
+This project may include or depend on third-party components with their
+own licenses. For example, it uses the RealTimeKit SDK by Cloudflare,
+which is licensed under the Apache License 2.0. You are responsible for
+complying with the licenses of all components you use. See the NOTICE.txt
+file for more details on attributions.

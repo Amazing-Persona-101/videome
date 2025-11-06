@@ -1,0 +1,27 @@
+NOTICE
+=======
+
+videome.video — Real-Time Video & Audio Web App
+Copyright (C) 2025  videome.video
+
+This software includes or depends upon third-party components
+distributed under their own licenses:
+
+- Cloudflare RealTimeKit SDK (Apache License 2.0)
+  © Cloudflare, Inc. — https://developers.cloudflare.com/realtime/
+
+The text of the Apache License 2.0 is reproduced below for reference.
+
+-------------------------------------------------------------------
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+-------------------------------------------------------------------
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+[Full Apache 2.0 license text available at: https://www.apache.org/licenses/LICENSE-2.0]
+
+-------------------------------------------------------------------
+
+All other original software components are © 2025 videome.video and
+licensed under AGPL-3.0+ (see LICENSE).
