@@ -266,4 +266,4 @@ Parent (external **Submit** button points at the child form):
 
 ## 📜 License
 
-MIT © 2025 Videome contributors
+See LICENSE.md
